@@ -460,6 +460,7 @@ section.portfolio {
   width: 100%;
   height: auto;
   padding-top: 50px;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.3);
 }
 section.portfolio .el {
   float: left;
@@ -475,6 +476,18 @@ section.portfolio .el {
 section.portfolio .el.fb {
   background-color: rgba(255, 255, 255, 0.3);
   text-align: center;
+  cursor: default;
+  position: relative;
+}
+section.portfolio .el.fb p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 100px;
+  left: 50%;
+  margin-left: -50%;
+  position: absolute;
 }
 section.portfolio .el.fb .face {
   width: 34px;
