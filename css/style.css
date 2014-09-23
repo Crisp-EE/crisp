@@ -377,6 +377,7 @@ html body {
   padding: 0px;
   font-family: "Source Sans Pro";
   color: #464547;
+  font-size: 12pt;
 }
 html body .group:after {
   content: "";
@@ -385,7 +386,7 @@ html body .group:after {
 }
 html body .wrapper {
   width: 75%;
-  min-height: 100%;
+  min-height: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 88px;
@@ -420,9 +421,23 @@ html body .wrapper nav.main ul li a {
   line-height: 48px;
   color: #464547;
   text-decoration: none;
+  font-weight: 300;
+  font-size: 12pt;
 }
-html body .wrapper nav.main ul li a:hover {
-  opacity: 0.82;
+html body .wrapper nav.main ul li a:hover, html body .wrapper nav.main ul li a.active {
+  opacity: 0.72;
+}
+html body .wrapper section.content {
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.2em;
+  font-weight: 300;
+  padding-top: 20%;
+}
+html body .wrapper section.content .bold {
+  font-weight: 700;
 }
 
 /*
