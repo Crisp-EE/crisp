@@ -390,6 +390,13 @@ html body .wrapper {
   margin-left: auto;
   margin-right: auto;
 }
+html body .wrapper .logo {
+  width: 200px;
+  height: 48px;
+  background-image: url("../img/crisp_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 /*
 ehk lää-heb vaja

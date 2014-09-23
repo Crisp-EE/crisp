@@ -19,7 +19,11 @@ html{
 			margin-left: auto;
 			margin-right: auto;
 			.logo{
-
+				width: 200px;
+				height: 48px;
+				background-image: url("../img/crisp_logo.png");
+				background-repeat: no-repeat;
+				background-size: contain;
 			}//logo
 		
 		}//wrapper
