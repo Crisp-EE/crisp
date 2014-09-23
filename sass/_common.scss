@@ -4,7 +4,9 @@ html{
 		height:100%;
 		margin:0px;
 		padding:0px;
-
+		font-family: "Source Sans Pro";
+		font-size: 24pt;
+		font-weight: 900;
 		.group:after {
 		  content: "";
 		  display: table;
@@ -12,14 +14,15 @@ html{
 
 		}
 		.wrapper{
-			width:100%;
+			width:75%;
 			min-height:100%;
-			padding-bottom:200px;
-		}
-		footer{
-			height:200px;
-			margin-top:-200px;
-		}
+			margin-left: auto;
+			margin-right: auto;
+			.logo{
+
+			}//logo
+		
+		}//wrapper
 	}
 }
 
