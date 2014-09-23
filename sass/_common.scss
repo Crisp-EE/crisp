@@ -7,6 +7,10 @@ html{
 		font-family: "Source Sans Pro";
 		color: $fontcolor;
 		font-size: 12pt;
+		background-image: url("../img/bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
 		.group:after {
 		  content: "";
 		  display: table;
