@@ -376,8 +376,7 @@ html body {
   margin: 0px;
   padding: 0px;
   font-family: "Source Sans Pro";
-  font-size: 24pt;
-  font-weight: 900;
+  color: #464547;
 }
 html body .group:after {
   content: "";
@@ -389,13 +388,41 @@ html body .wrapper {
   min-height: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 88px;
 }
 html body .wrapper .logo {
-  width: 200px;
+  width: 20%;
   height: 48px;
   background-image: url("../img/crisp_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
+  float: left;
+}
+html body .wrapper nav.main {
+  width: 80%;
+  float: right;
+}
+html body .wrapper nav.main ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+html body .wrapper nav.main ul li {
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+}
+html body .wrapper nav.main ul li a {
+  line-height: 48px;
+  color: #464547;
+  text-decoration: none;
+}
+html body .wrapper nav.main ul li a:hover {
+  opacity: 0.82;
 }
 
 /*
