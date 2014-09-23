@@ -16,21 +16,28 @@ section.portfolio{
 		
 		&.fb{
 			background-color: rgba(255, 255,255, 0.3);
+			text-align: center;
+
 			.face{
-				width: 66px;
-				background-image: url("../img/fb.png");
-				height: 66px;
+				width: 34px;
+				background-image: url("../img/f.png");
+				height: 34px;
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
+				display: inline-block;
+				margin-top: 160px;
 			}
-			.bg{
-				width: 66px;
-				width: 66px;
+
+			.be{
+				width: 34px;
+				height: 34px;
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-image: url("../img/be.png");
+				display: inline-block;
+				margin-top: 160px;
 			}
 	
 		}
