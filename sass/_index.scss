@@ -13,6 +13,7 @@ section.portfolio{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		cursor: pointer;
 		
 		&.fb{
 			background-color: rgba(255, 255,255, 0.3);
@@ -27,6 +28,12 @@ section.portfolio{
 				background-size: contain;
 				display: inline-block;
 				margin-top: 160px;
+				margin-right: 10px;
+				cursor: pointer;
+				margin-left: 10px;
+				&:hover{
+					opacity: 0.8;
+				}
 			}
 
 			.be{
@@ -38,6 +45,12 @@ section.portfolio{
 				background-image: url("../img/be.png");
 				display: inline-block;
 				margin-top: 160px;
+				margin-right: 10px;
+				cursor: pointer;
+				margin-left: 10px;
+				&:hover{
+					opacity: 0.8;
+				}
 			}
 	
 		}

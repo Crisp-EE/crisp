@@ -470,6 +470,7 @@ section.portfolio .el {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 section.portfolio .el.fb {
   background-color: rgba(255, 255, 255, 0.3);
@@ -484,6 +485,12 @@ section.portfolio .el.fb .face {
   background-size: contain;
   display: inline-block;
   margin-top: 160px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+section.portfolio .el.fb .face:hover {
+  opacity: 0.8;
 }
 section.portfolio .el.fb .be {
   width: 34px;
@@ -494,6 +501,12 @@ section.portfolio .el.fb .be {
   background-image: url("../img/be.png");
   display: inline-block;
   margin-top: 160px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+section.portfolio .el.fb .be:hover {
+  opacity: 0.8;
 }
 section.portfolio .el:hover {
   background-color: rgba(255, 255, 255, 0.3);
