@@ -465,8 +465,8 @@ section.portfolio .el {
   float: left;
   width: 20%;
   height: 200px;
-  border-top: solid 1px #fff;
-  border-right: solid 1px #fff;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
