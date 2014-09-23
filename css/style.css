@@ -381,7 +381,7 @@ html body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 html body .group:after {
   content: "";
@@ -394,6 +394,10 @@ html body .wrapper {
   margin-left: auto;
   margin-right: auto;
   padding-top: 88px;
+}
+html body .wrapper.portfolio {
+  min-height: 48px;
+  height: 48px;
 }
 html body .wrapper .logo {
   width: 20%;
@@ -420,6 +424,7 @@ html body .wrapper nav.main ul li {
   width: 100px;
   text-align: center;
   display: inline-block;
+  color: #000;
 }
 html body .wrapper nav.main ul li a {
   line-height: 48px;
@@ -430,6 +435,7 @@ html body .wrapper nav.main ul li a {
 }
 html body .wrapper nav.main ul li a:hover, html body .wrapper nav.main ul li a.active {
   opacity: 0.72;
+  color: #000;
 }
 html body .wrapper section.content {
   width: 75%;
@@ -450,6 +456,22 @@ ehk lää-heb vaja
 -moz-box-sizing: border-box;
 box-sizing: border-box;
  */
+section.portfolio {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+section.portfolio .el {
+  float: left;
+  width: 20%;
+  height: 200px;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Source Sans Pro';
   font-weight: 200;
