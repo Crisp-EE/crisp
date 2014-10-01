@@ -586,6 +586,7 @@ section.portfolio {
   margin-top: 50px;
 }
 section.portfolio .el {
+  opacity: 0.6;
   float: left;
   width: 20%;
   height: 270px;
@@ -601,14 +602,31 @@ section.portfolio .el {
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  position: relative;
+}
+section.portfolio .el.pic {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section.portfolio .el.pic .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35%;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  padding: 5%;
 }
 section.portfolio .el .logo {
-  opacity: 0.6;
   max-width: 80%;
   margin-bottom: 5%;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
+}
+section.portfolio .el:hover {
+  opacity: 1;
 }
 section.portfolio .el:hover .logo {
   opacity: 1;
@@ -617,7 +635,13 @@ section.portfolio .el:hover .text {
   opacity: 1;
 }
 section.portfolio .el .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35%;
   opacity: 0;
+  width: 60%;
+  padding: 5%;
 }
 section.portfolio .el .text h1 {
   padding: 0;

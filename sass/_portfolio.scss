@@ -6,6 +6,7 @@ section.portfolio{
 	border-bottom: solid 2px rgba(255, 255,255, 0.3);
 	margin-top: 50px;
 	.el{
+		opacity: 0.6;
 		float:left;
 		width: 20%;
 		height: 270px;
@@ -16,20 +17,35 @@ section.portfolio{
 		box-sizing: border-box;
 		cursor: pointer;
 		text-align: center;
--webkit-transition: all 200ms ease-in-out;
-			-moz-transition: all 200ms ease-in-out;
-			-ms-transition: all 200ms ease-in-out;
-			-o-transition: all 200ms ease-in-out;
-			transition: all 200ms ease-in-out;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+		-ms-transition: all 200ms ease-in-out;
+		-o-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
+		position: relative;
+		&.pic{
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			.text{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -35%;
+				background-color: rgba(255, 255,255, 0.8);
+				width: 60%;
+				padding: 5%;
+			}
+		}
 		.logo{
-			opacity: 0.6;
 			max-width: 80%;
 			margin-bottom: 5%;
-			margin-top: 20%;
+			margin-top: 15%;
 			margin-left: auto;
 			margin-right: auto;
 		}
 		&:hover{
+			opacity: 1;
 			.logo{
 				opacity: 1;
 			}
@@ -38,8 +54,13 @@ section.portfolio{
 			}
 		}
 		.text{
-			
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -35%;
 			opacity: 0;
+			width: 60%;
+				padding: 5%;
 			h1{
 				padding: 0;
 				margin: 0;
