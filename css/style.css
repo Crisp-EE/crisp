@@ -400,6 +400,8 @@ html body .wrapper.portfolio {
   height: 48px;
 }
 html body .wrapper .logo {
+  width: 20%;
+  height: 48px;
   background-image: url("../img/crisp_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -471,22 +473,27 @@ section.portfolio .el {
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;
-}
-section.portfolio .el .logo {
-  margin-bottom: 5%;
-  margin-top: 20%;
-  margin-left: auto;
-  margin-right: auto;
-}
-section.portfolio .el:hover .text {
-  opacity: 1;
-}
-section.portfolio .el .text {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+}
+section.portfolio .el .logo {
+  opacity: 0.6;
+  max-width: 80%;
+  margin-bottom: 5%;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.portfolio .el:hover .logo {
+  opacity: 1;
+}
+section.portfolio .el:hover .text {
+  opacity: 1;
+}
+section.portfolio .el .text {
   opacity: 0;
 }
 section.portfolio .el .text h1 {

@@ -16,23 +16,29 @@ section.portfolio{
 		box-sizing: border-box;
 		cursor: pointer;
 		text-align: center;
+-webkit-transition: all 200ms ease-in-out;
+			-moz-transition: all 200ms ease-in-out;
+			-ms-transition: all 200ms ease-in-out;
+			-o-transition: all 200ms ease-in-out;
+			transition: all 200ms ease-in-out;
 		.logo{
+			opacity: 0.6;
+			max-width: 80%;
 			margin-bottom: 5%;
 			margin-top: 20%;
 			margin-left: auto;
 			margin-right: auto;
 		}
 		&:hover{
+			.logo{
+				opacity: 1;
+			}
 			.text{
 				opacity: 1;
 			}
 		}
 		.text{
-			-webkit-transition: all 200ms ease-in-out;
-			-moz-transition: all 200ms ease-in-out;
-			-ms-transition: all 200ms ease-in-out;
-			-o-transition: all 200ms ease-in-out;
-			transition: all 200ms ease-in-out;
+			
 			opacity: 0;
 			h1{
 				padding: 0;
