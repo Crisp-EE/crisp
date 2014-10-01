@@ -398,6 +398,22 @@ html body .wrapper {
   padding-top: 88px;
   clear: both;
 }
+html body .wrapper .be {
+  width: 34px;
+  height: 34px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/be.png");
+  display: inline-block;
+  margin-top: 160px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+html body .wrapper .be:hover {
+  opacity: 0.8;
+}
 html body .wrapper.portfolio {
   min-height: 48px;
   height: 48px;
@@ -640,22 +656,6 @@ section.portfolio .el.fb .face {
 section.portfolio .el.fb .face:hover {
   opacity: 0.8;
 }
-section.portfolio .el.fb .be {
-  width: 34px;
-  height: 34px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../img/be.png");
-  display: inline-block;
-  margin-top: 160px;
-  margin-right: 10px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-section.portfolio .el.fb .be:hover {
-  opacity: 0.8;
-}
 section.portfolio .el:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -667,11 +667,32 @@ section.portfolio .el:hover {
 .portfolio-single .left {
   margin-left: 4.5454%;
   margin-right: 4.5454%;
-  width: 31.8181%;
+  width: 22.7273%;
   float: left;
+  padding-left: 4.5454%;
+  padding-right: 4.5454%;
+}
+.portfolio-single .left header {
+  margin-top: 25%;
+  border-bottom: 2px solid rgba(70, 69, 71, 0.6);
+  padding-bottom: 15%;
+  margin-bottom: 15%;
+}
+.portfolio-single .left header p.h {
+  font-size: 18pt;
+}
+.portfolio-single .left header p.klient {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.portfolio-single .left p.desc {
+  line-height: 1.5;
 }
 .portfolio-single .right {
   margin-right: 4.5454%;
   float: left;
   width: 54.5454%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

@@ -96,23 +96,6 @@ section.portfolio{
 				}
 			}
 
-			.be{
-				width: 34px;
-				height: 34px;
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				background-image: url("../img/be.png");
-				display: inline-block;
-				margin-top: 160px;
-				margin-right: 10px;
-				cursor: pointer;
-				margin-left: 10px;
-				&:hover{
-					opacity: 0.8;
-				}
-			}
-	
 		}
 		&:hover{
 			background-color: rgba(255, 255,255, 0.3);
@@ -122,6 +105,8 @@ section.portfolio{
 
 }
 
+//SINGLE
+
 .portfolio-single{
 	.left, .right{
 		background-color: rgba(255, 255,255, 0.3);
@@ -130,13 +115,36 @@ section.portfolio{
 	.left{
 		margin-left: 4.5454%;
 		margin-right: 4.5454%;
-		width: 31.8181%;
+		width: 22.7273%;
 		float:left;
+		padding-left: 4.5454%;
+		padding-right: 4.5454%;
+		header{
+			margin-top: 25%;
+			p.h{
+				font-size: 18pt;
+			}
+			p.klient{
+				text-transform: uppercase;
+				font-weight: 300;
+				letter-spacing: 1px;
+			}
+			border-bottom: 2px solid rgba(70,69,71, 0.6);;
+			padding-bottom: 15%;
+			margin-bottom: 15%;
+
+		}//header
+		p.desc{
+			line-height: 1.5;
+		}
+
 	}
 	.right{
 		margin-right: 4.5454%;
 		float:left;
 		width: 54.5454%;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 
 }
