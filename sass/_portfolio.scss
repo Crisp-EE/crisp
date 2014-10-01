@@ -35,6 +35,11 @@ section.portfolio{
 				background-color: rgba(255, 255,255, 0.8);
 				width: 60%;
 				padding: 5%;
+				-webkit-transition: all 200ms ease-in-out;
+				-moz-transition: all 200ms ease-in-out;
+				-ms-transition: all 200ms ease-in-out;
+				-o-transition: all 200ms ease-in-out;
+				transition: all 200ms ease-in-out;
 			}
 		}
 		.logo{
@@ -60,7 +65,12 @@ section.portfolio{
 			margin-left: -35%;
 			opacity: 0;
 			width: 60%;
-				padding: 5%;
+			padding: 5%;
+			-webkit-transition: all 200ms ease-in-out;
+			-moz-transition: all 200ms ease-in-out;
+			-ms-transition: all 200ms ease-in-out;
+			-o-transition: all 200ms ease-in-out;
+			transition: all 200ms ease-in-out;
 			h1{
 				padding: 0;
 				margin: 0;
@@ -76,12 +86,12 @@ section.portfolio{
 				margin-top: 0px;
 				font-size: 10pt;
 				.line{
-					height: 2px;
+					height: 1px;
 					width:100%;
 					background-color: $fontcolor;
 					position: absolute;
 					top: 8px;
-					opacity: 0.3;
+					opacity: 1;
 				}
 			}
 		}
