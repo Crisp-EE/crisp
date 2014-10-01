@@ -99,11 +99,26 @@ html{
 				margin-right: auto;
 				font-size: 2.2em;
 				font-weight: 300;
-				padding-top: 20%;
+				padding-top: 10%;
+				a.kontakt{
+					text-decoration: none;
+					color: $fontcolor;
+					&:hover{
+						opacity: 0.6;
+					}
+				}
 				.bold{
 					font-weight: 700;
 				}
 			}//content
+			.bgDesc{
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				font-size: 9pt;
+				opacity: 0.3;
+				text-align: right;
+			}
 		
 		}//wrapper
 	}

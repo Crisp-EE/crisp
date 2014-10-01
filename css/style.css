@@ -468,10 +468,25 @@ html body .wrapper section.content {
   margin-right: auto;
   font-size: 2.2em;
   font-weight: 300;
-  padding-top: 20%;
+  padding-top: 10%;
+}
+html body .wrapper section.content a.kontakt {
+  text-decoration: none;
+  color: #464547;
+}
+html body .wrapper section.content a.kontakt:hover {
+  opacity: 0.6;
 }
 html body .wrapper section.content .bold {
   font-weight: 700;
+}
+html body .wrapper .bgDesc {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 9pt;
+  opacity: 0.3;
+  text-align: right;
 }
 
 /*
