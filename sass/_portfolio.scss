@@ -17,16 +17,41 @@ section.portfolio{
 		box-sizing: border-box;
 		cursor: pointer;
 		text-align: center;
-		-webkit-transition: all 200ms ease-in-out;
-		-moz-transition: all 200ms ease-in-out;
-		-ms-transition: all 200ms ease-in-out;
-		-o-transition: all 200ms ease-in-out;
-		transition: all 200ms ease-in-out;
 		position: relative;
 		&.pic{
 			background-repeat: no-repeat;
 			background-position: center center;
-			background-size: cover;
+			background-size: 80% auto;
+			.hoverpic{
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				position: absolute;
+				top: 0px;
+				left:0px;
+				right:0px;
+				bottom:0px;
+				opacity: 0;
+				-webkit-transition: all 200ms ease-in-out;
+				-moz-transition: all 200ms ease-in-out;
+				-ms-transition: all 200ms ease-in-out;
+				-o-transition: all 200ms ease-in-out;
+				transition: all 200ms ease-in-out;
+				z-index: 0;
+			}
+
+			&:hover{
+				background: none !important;
+				.hoverpic{
+					opacity: 1;
+					-webkit-transition: all 200ms ease-in-out;
+					-moz-transition: all 200ms ease-in-out;
+					-ms-transition: all 200ms ease-in-out;
+					-o-transition: all 200ms ease-in-out;
+					transition: all 200ms ease-in-out;
+				}
+			}
+				
 			.text{
 				position: absolute;
 				top: 50%;
@@ -40,6 +65,7 @@ section.portfolio{
 				-ms-transition: all 200ms ease-in-out;
 				-o-transition: all 200ms ease-in-out;
 				transition: all 200ms ease-in-out;
+				z-index: 1;
 			}
 		}
 		.logo{

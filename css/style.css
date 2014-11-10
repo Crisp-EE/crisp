@@ -600,17 +600,40 @@ section.portfolio .el {
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
   position: relative;
 }
 section.portfolio .el.pic {
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 80% auto;
+}
+section.portfolio .el.pic .hoverpic {
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  z-index: 0;
+}
+section.portfolio .el.pic:hover {
+  background: none !important;
+}
+section.portfolio .el.pic:hover .hoverpic {
+  opacity: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 section.portfolio .el.pic .text {
   position: absolute;
@@ -625,6 +648,7 @@ section.portfolio .el.pic .text {
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  z-index: 1;
 }
 section.portfolio .el .logo {
   max-width: 80%;
