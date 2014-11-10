@@ -179,17 +179,23 @@ section.portfolio{
 		padding-right: 4.5454%;
 		header{
 			margin-top: 25%;
-			p.h{
+			p.kategooria{
 				font-size: 18pt;
+				font-weight: 400;
+				margin-bottom: 0px;
+			}
+			p.work {
+				font-size: 18pt;
+				margin: 0px;
 			}
 			p.klient{
 				text-transform: uppercase;
 				font-weight: 300;
 				letter-spacing: 1px;
 			}
-			border-bottom: 2px solid rgba(70,69,71, 0.6);;
-			padding-bottom: 15%;
-			margin-bottom: 15%;
+			border-bottom: 1px solid rgba(70,69,71, 0.6);;
+			padding-bottom: 5%;
+			margin-bottom: 5%;
 
 		}//header
 		p.desc{

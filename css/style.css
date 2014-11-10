@@ -402,6 +402,7 @@ html body .wrapper {
 html body .wrapper .be {
   width: 34px;
   height: 34px;
+  transition: opacity 0.2s ease-in-out;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -451,6 +452,7 @@ html body .wrapper header.main nav.main ul li {
   color: #000;
 }
 html body .wrapper header.main nav.main ul li a {
+  transition: all 0.2s ease-in-out;
   line-height: 48px;
   color: #464547;
   text-decoration: none;
@@ -468,17 +470,18 @@ html body .wrapper section.content {
   margin-right: auto;
   font-size: 2.2em;
   font-weight: 300;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 html body .wrapper section.content a.kontakt {
   text-decoration: none;
   color: #464547;
 }
 html body .wrapper section.content a.kontakt:hover {
+  transition: opacity 0.2s ease-in-out;
   opacity: 0.6;
 }
 html body .wrapper section.content .bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 html body .wrapper .bgDesc {
   position: absolute;
@@ -751,12 +754,18 @@ section.portfolio .el:hover {
 }
 .portfolio-single .left header {
   margin-top: 25%;
-  border-bottom: 2px solid rgba(70, 69, 71, 0.6);
-  padding-bottom: 15%;
-  margin-bottom: 15%;
+  border-bottom: 1px solid rgba(70, 69, 71, 0.6);
+  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
-.portfolio-single .left header p.h {
+.portfolio-single .left header p.kategooria {
   font-size: 18pt;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.portfolio-single .left header p.work {
+  font-size: 18pt;
+  margin: 0px;
 }
 .portfolio-single .left header p.klient {
   text-transform: uppercase;
