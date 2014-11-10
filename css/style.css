@@ -605,7 +605,7 @@ section.portfolio .el {
 section.portfolio .el.pic {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 80% auto;
+  background-size: cover;
 }
 section.portfolio .el.pic .hoverpic {
   background-repeat: no-repeat;
@@ -624,9 +624,6 @@ section.portfolio .el.pic .hoverpic {
   transition: all 200ms ease-in-out;
   z-index: 0;
 }
-section.portfolio .el.pic:hover {
-  background: none !important;
-}
 section.portfolio .el.pic:hover .hoverpic {
   opacity: 1;
   -webkit-transition: all 200ms ease-in-out;
@@ -637,18 +634,23 @@ section.portfolio .el.pic:hover .hoverpic {
 }
 section.portfolio .el.pic .text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -35%;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 60%;
-  padding: 5%;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  bottom: 0%;
+  left: 0;
+  top: 60%;
+  margin-left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 0px;
+  padding-right: 0px;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   z-index: 1;
+  color: white;
 }
 section.portfolio .el .logo {
   max-width: 80%;
@@ -683,23 +685,16 @@ section.portfolio .el .text {
 section.portfolio .el .text h1 {
   padding: 0;
   margin: 0;
-  font-weight: 400;
-  font-size: 16pt;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.4em;
 }
 section.portfolio .el .text .desc {
   display: inline-block;
   position: relative;
-  padding-top: 20px;
+  padding-top: 0px;
   margin-top: 0px;
   font-size: 10pt;
-}
-section.portfolio .el .text .desc .line {
-  height: 1px;
-  width: 100%;
-  background-color: #464547;
-  position: absolute;
-  top: 8px;
-  opacity: 1;
 }
 section.portfolio .el.fb {
   background-color: rgba(255, 255, 255, 0.3);
