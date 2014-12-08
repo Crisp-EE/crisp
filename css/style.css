@@ -378,7 +378,6 @@ html body {
   font-family: "Source Sans Pro";
   color: #464547;
   font-size: 12pt;
-  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -465,12 +464,11 @@ html body .wrapper header.main nav.main ul li a:hover, html body .wrapper header
 }
 html body .wrapper section.content {
   width: 75%;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2.2em;
+  font-size: 5.2em;
   font-weight: 300;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 html body .wrapper section.content a.kontakt {
   text-decoration: none;
@@ -626,11 +624,11 @@ section.portfolio .el.pic .hoverpic {
 }
 section.portfolio .el.pic:hover .hoverpic {
   opacity: 1;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 section.portfolio .el.pic .text {
   position: absolute;
@@ -676,11 +674,11 @@ section.portfolio .el .text {
   opacity: 0;
   width: 60%;
   padding: 5%;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 section.portfolio .el .text h1 {
   padding: 0;
@@ -694,7 +692,8 @@ section.portfolio .el .text .desc {
   position: relative;
   padding-top: 0px;
   margin-top: 0px;
-  font-size: 10pt;
+  font-size: 12pt;
+  font-weight: 300;
 }
 section.portfolio .el.fb {
   background-color: rgba(255, 255, 255, 0.3);

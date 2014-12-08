@@ -44,11 +44,11 @@ section.portfolio{
 				//background: none !important;
 				.hoverpic{
 					opacity: 1;
-					-webkit-transition: all 200ms ease-in-out;
-					-moz-transition: all 200ms ease-in-out;
-					-ms-transition: all 200ms ease-in-out;
-					-o-transition: all 200ms ease-in-out;
-					transition: all 200ms ease-in-out;
+					-webkit-transition: all 400ms ease-in-out;
+					-moz-transition: all 400ms ease-in-out;
+					-ms-transition: all 400ms ease-in-out;
+					-o-transition: all 400ms ease-in-out;
+					transition: all 400ms ease-in-out;
 				}
 			}
 				
@@ -97,11 +97,11 @@ section.portfolio{
 			opacity: 0;
 			width: 60%;
 			padding: 5%;
-			-webkit-transition: all 200ms ease-in-out;
-			-moz-transition: all 200ms ease-in-out;
-			-ms-transition: all 200ms ease-in-out;
-			-o-transition: all 200ms ease-in-out;
-			transition: all 200ms ease-in-out;
+			-webkit-transition: all 500ms ease-in-out;
+			-moz-transition: all 500ms ease-in-out;
+			-ms-transition: all 500ms ease-in-out;
+			-o-transition: all 500ms ease-in-out;
+			transition: all 500ms ease-in-out;
 			h1{
 				padding: 0;
 				margin: 0;
@@ -116,7 +116,8 @@ section.portfolio{
 				position: relative;
 				padding-top: 0px;
 				margin-top: 0px;
-				font-size: 10pt;
+				font-size: 12pt;
+				font-weight: 300;
 			}
 		}
 		&.fb{
