@@ -464,22 +464,28 @@ html body .wrapper header.main nav.main ul li a:hover, html body .wrapper header
 }
 html body .wrapper section.content {
   width: 75%;
+  /*text-align: center;
   margin-left: auto;
-  margin-right: auto;
-  font-size: 5.2em;
+  margin-right: auto;*/
+  font-size: 6.4em;
+  line-height: 100%;
   font-weight: 300;
   padding-top: 10%;
 }
 html body .wrapper section.content a.kontakt {
   text-decoration: none;
   color: #464547;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
 }
 html body .wrapper section.content a.kontakt:hover {
-  transition: opacity 0.2s ease-in-out;
   opacity: 0.6;
 }
 html body .wrapper section.content .bold {
-  font-weight: 600;
+  font-weight: 400;
 }
 html body .wrapper .bgDesc {
   position: absolute;
