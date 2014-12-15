@@ -9,27 +9,18 @@ html body {
   font-family: "Source Sans Pro";
   color: #464547;
   font-size: 12pt;
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  background-attachment: fixed;
 }
 html body .group:after {
   content: "";
   display: table;
   clear: both;
 }
-html body .wrapper {
-  width: 75%;
-  min-height: 80%;
-  max-height: 80%;
-  height: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 88px;
-  clear: both;
-  position: relative;
-}
-html body .wrapper .be {
+html body .be {
   width: 34px;
   height: 34px;
   transition: opacity 0.2s ease-in-out;
@@ -43,82 +34,68 @@ html body .wrapper .be {
   cursor: pointer;
   margin-left: 10px;
 }
-html body .wrapper .be:hover {
+html body .be:hover {
   opacity: 0.8;
 }
-html body .wrapper.portfolio {
+html body.portfolio {
   min-height: 48px;
   height: 48px;
 }
-html body .wrapper header.main {
-  margin-bottom: 30px;
-  clear: both;
-}
-html body .wrapper header.main .logo {
-  width: 20%;
-  height: 48px;
+html body a.navbar-brand {
   background-image: url("../img/crisp_logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  float: left;
 }
-html body .wrapper header.main nav.main {
-  width: 80%;
-  float: right;
+html body .navbar-default {
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
 }
-html body .wrapper header.main nav.main ul {
+html body .navbar-default .navbar-nav li:active a {
+  background-color: transparent;
+}
+html body #navbar ul {
   padding: 0;
   margin: 0;
-  width: 100%;
-  text-align: right;
 }
-html body .wrapper header.main nav.main ul li {
+html body #navbar ul li {
   margin: 0;
   padding: 0;
-  height: 48px;
-  width: 100px;
-  text-align: center;
-  display: inline-block;
   color: #000;
 }
-html body .wrapper header.main nav.main ul li a {
+html body #navbar ul li a {
   transition: all 0.2s ease-in-out;
   line-height: 48px;
   color: #464547;
   text-decoration: none;
   font-weight: 300;
-  font-size: 12pt;
 }
-html body .wrapper header.main nav.main ul li a:hover, html body .wrapper header.main nav.main ul li a.active {
+html body #navbar ul li a:hover {
+  background-color: transparent;
   opacity: 0.4;
   color: #000;
 }
-html body .wrapper section.content {
+html body section.content {
   width: 75%;
-  /*text-align: center;
+  text-align: center;
   margin-left: auto;
-  margin-right: auto;*/
-  font-size: 6.4em;
-  line-height: 100%;
+  margin-right: auto;
+  font-size: 2.2em;
   font-weight: 300;
-  padding-top: 10%;
+  padding-top: 15%;
 }
-html body .wrapper section.content a.kontakt {
+html body section.content a.kontakt {
   text-decoration: none;
   color: #464547;
-  transition: opacity 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
 }
-html body .wrapper section.content a.kontakt:hover {
+html body section.content a.kontakt:hover {
+  transition: opacity 0.2s ease-in-out;
   opacity: 0.6;
 }
-html body .wrapper section.content .bold {
-  font-weight: 400;
+html body section.content .bold {
+  font-weight: 600;
 }
-html body .wrapper .bgDesc {
+html body .bgDesc {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -217,16 +194,13 @@ box-sizing: border-box;
   font-stretch: normal;
   src: url("EOT/SourceSansPro-BlackIt.eot") format("embedded-opentype"), url("WOFF/OTF/SourceSansPro-BlackIt.otf.woff") format("woff"), url("OTF/SourceSansPro-BlackIt.otf") format("opentype"), url("TTF/SourceSansPro-BlackIt.ttf") format("truetype");
 }
-section.portfolio {
+div.portfolio {
   width: 100%;
   height: auto;
   border-bottom: solid 2px rgba(255, 255, 255, 0.3);
-  margin-top: 50px;
 }
-section.portfolio .el {
+div.portfolio .el {
   opacity: 0.6;
-  float: left;
-  width: 20%;
   height: 270px;
   border-top: solid 2px rgba(255, 255, 255, 0.3);
   border-right: solid 2px rgba(255, 255, 255, 0.3);
@@ -237,12 +211,12 @@ section.portfolio .el {
   text-align: center;
   position: relative;
 }
-section.portfolio .el.pic {
+div.portfolio .el.pic {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-section.portfolio .el.pic .hoverpic {
+div.portfolio .el.pic .hoverpic {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -259,15 +233,15 @@ section.portfolio .el.pic .hoverpic {
   transition: all 200ms ease-in-out;
   z-index: 0;
 }
-section.portfolio .el.pic:hover .hoverpic {
+div.portfolio .el.pic:hover .hoverpic {
   opacity: 1;
-  -webkit-transition: all 400ms ease-in-out;
-  -moz-transition: all 400ms ease-in-out;
-  -ms-transition: all 400ms ease-in-out;
-  -o-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
-section.portfolio .el.pic .text {
+div.portfolio .el.pic .text {
   position: absolute;
   bottom: 0%;
   left: 0;
@@ -287,58 +261,66 @@ section.portfolio .el.pic .text {
   z-index: 1;
   color: white;
 }
-section.portfolio .el .logo {
+div.portfolio .el .logo {
   max-width: 80%;
   margin-bottom: 5%;
   margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
 }
-section.portfolio .el:hover {
+div.portfolio .el:hover {
   opacity: 1;
 }
-section.portfolio .el:hover .logo {
+div.portfolio .el:hover .logo {
   opacity: 1;
 }
-section.portfolio .el:hover .text {
+div.portfolio .el:hover .text {
   opacity: 1;
 }
-section.portfolio .el .text {
+div.portfolio .el .text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -35%;
   opacity: 0;
-  width: 60%;
-  padding: 5%;
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -ms-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  bottom: 0%;
+  left: 0;
+  top: 60%;
+  margin-left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 0px;
+  padding-right: 0px;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  z-index: 1;
+  color: white;
 }
-section.portfolio .el .text h1 {
+div.portfolio .el .text h1 {
   padding: 0;
   margin: 0;
   margin-top: 10px;
   font-weight: 600;
   font-size: 1.4em;
+  line-height: 1;
 }
-section.portfolio .el .text .desc {
+div.portfolio .el .text .desc {
   display: inline-block;
   position: relative;
   padding-top: 0px;
-  margin-top: 0px;
-  font-size: 12pt;
+  margin-top: 5px;
+  font-size: 10pt;
   font-weight: 300;
 }
-section.portfolio .el.fb {
+div.portfolio .el.fb {
   background-color: rgba(255, 255, 255, 0.3);
   text-align: center;
   cursor: default;
   position: relative;
 }
-section.portfolio .el.fb p {
+div.portfolio .el.fb p {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -348,7 +330,7 @@ section.portfolio .el.fb p {
   margin-left: -50%;
   position: absolute;
 }
-section.portfolio .el.fb .face {
+div.portfolio .el.fb .face {
   width: 34px;
   background-image: url("../img/f.png");
   height: 34px;
@@ -361,16 +343,49 @@ section.portfolio .el.fb .face {
   cursor: pointer;
   margin-left: 10px;
 }
-section.portfolio .el.fb .face:hover {
+div.portfolio .el.fb .face:hover {
   opacity: 0.8;
 }
-section.portfolio .el:hover {
+div.portfolio .el:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.portfolio-single #artworks {
+  position: relative;
+}
+.portfolio-single #artworks ul#arworks-ul li {
+  display: none;
+}
+.portfolio-single #artworks ul.images-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.portfolio-single #artworks ul.images-ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.portfolio-single #artworks ul.images-ul li a {
+  display: block;
+  height: 7px;
+  width: 7px;
+  background-color: #464547;
+  border: solid 1px #464547;
+  outline: none;
+}
+@media only screen and (max-width: 900px) {
+  .portfolio-single #artworks ul.images-ul li a {
+    height: 15px;
+    width: 15px;
+  }
+}
+.portfolio-single #artworks ul.images-ul li.ui-tabs-active a {
+  background-color: transparent;
+}
 .portfolio-single #next {
-  right: 0px;
-  top: 50%;
+  right: -25px;
+  top: 25%;
   margin-top: 78.5px;
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -379,8 +394,8 @@ section.portfolio .el:hover {
   transform: rotate(180deg);
 }
 .portfolio-single #prev {
-  left: 0px;
-  top: 50%;
+  left: -25px;
+  top: 25%;
   margin-top: 78.5px;
 }
 .portfolio-single #next, .portfolio-single #prev {
@@ -395,45 +410,49 @@ section.portfolio .el:hover {
 .portfolio-single #next:hover, .portfolio-single #prev:hover {
   opacity: 0.6;
 }
-.portfolio-single .left, .portfolio-single .right {
+.portfolio-single .portfolio-sidebar, .portfolio-single .portfolio-image {
   background-color: rgba(255, 255, 255, 0.3);
-  height: 90%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.portfolio-single .left {
-  margin-left: 4.5454%;
-  margin-right: 4.5454%;
-  width: 22.7273%;
-  float: left;
-  padding-left: 4.5454%;
-  padding-right: 4.5454%;
+.portfolio-single .portfolio-sidebar {
+  padding-left: 3%;
+  padding-right: 3%;
 }
-.portfolio-single .left header {
-  margin-top: 25%;
+.portfolio-single .portfolio-sidebar header {
   border-bottom: 1px solid rgba(70, 69, 71, 0.6);
   padding-bottom: 5%;
   margin-bottom: 5%;
 }
-.portfolio-single .left header p.kategooria {
+.portfolio-single .portfolio-sidebar header p.kategooria {
   font-size: 18pt;
   font-weight: 400;
   margin-bottom: 0px;
 }
-.portfolio-single .left header p.work {
+.portfolio-single .portfolio-sidebar header p.work {
   font-size: 18pt;
   margin: 0px;
 }
-.portfolio-single .left header p.klient {
+.portfolio-single .portfolio-sidebar header p.klient {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
 }
-.portfolio-single .left p.desc {
+.portfolio-single .portfolio-sidebar p.desc {
   line-height: 1.5;
 }
-.portfolio-single .right {
-  margin-right: 4.5454%;
-  float: left;
-  width: 54.5454%;
+.portfolio-single .portfolio-image {
+  text-align: center;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.portfolio-single .portfolio-image img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 500px) {
+  .portfolio-single .portfolio-image img {
+    height: 500px;
+    width: auto;
+  }
 }

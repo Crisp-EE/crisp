@@ -1,14 +1,11 @@
 //portfolio
 
-section.portfolio{
+div.portfolio{
 	width: 100%;
 	height: auto;
 	border-bottom: solid 2px rgba(255, 255,255, 0.3);
-	margin-top: 50px;
 	.el{
 		opacity: 0.6;
-		float:left;
-		width: 20%;
 		height: 270px;
 		border-top: solid 2px rgba(255, 255,255, 0.3);
 		border-right: solid 2px rgba(255, 255,255, 0.3);
@@ -44,11 +41,11 @@ section.portfolio{
 				//background: none !important;
 				.hoverpic{
 					opacity: 1;
-					-webkit-transition: all 400ms ease-in-out;
-					-moz-transition: all 400ms ease-in-out;
-					-ms-transition: all 400ms ease-in-out;
-					-o-transition: all 400ms ease-in-out;
-					transition: all 400ms ease-in-out;
+					-webkit-transition: all 200ms ease-in-out;
+					-moz-transition: all 200ms ease-in-out;
+					-ms-transition: all 200ms ease-in-out;
+					-o-transition: all 200ms ease-in-out;
+					transition: all 200ms ease-in-out;
 				}
 			}
 				
@@ -91,23 +88,31 @@ section.portfolio{
 		}
 		.text{
 			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-left: -35%;
 			opacity: 0;
-			width: 60%;
-			padding: 5%;
-			-webkit-transition: all 500ms ease-in-out;
-			-moz-transition: all 500ms ease-in-out;
-			-ms-transition: all 500ms ease-in-out;
-			-o-transition: all 500ms ease-in-out;
-			transition: all 500ms ease-in-out;
+				bottom: 0%;
+				left: 0;
+				top: 60%;
+				margin-left: 0;
+				background-color: rgba(0, 0,0, 0.6);
+				width: 100%;
+				padding-top: 5%;
+				padding-bottom: 5%;
+				padding-left: 0px;
+				padding-right: 0px;
+				-webkit-transition: all 400ms ease-in-out;
+				-moz-transition: all 400ms ease-in-out;
+				-ms-transition: all 400ms ease-in-out;
+				-o-transition: all 400ms ease-in-out;
+				transition: all 400ms ease-in-out;
+				z-index: 1;
+				color: rgba(255,255,255, 1);
 			h1{
 				padding: 0;
 				margin: 0;
 				margin-top: 10px;
 				font-weight: 600;
 				font-size: 1.4em;
+				line-height: 1;
 
 			}
 
@@ -115,8 +120,8 @@ section.portfolio{
 				display: inline-block;
 				position: relative;
 				padding-top: 0px;
-				margin-top: 0px;
-				font-size: 12pt;
+				margin-top: 5px;
+				font-size: 10pt;
 				font-weight: 300;
 			}
 		}
@@ -163,10 +168,45 @@ section.portfolio{
 
 //SINGLE
 
-.portfolio-single{
-	#next{
-		right: 0px;
-		top: 50%;
+.portfolio-single {
+	#artworks {
+		position: relative;
+		ul#arworks-ul {
+			li{
+				display:none;
+			}
+		}
+		ul.images-ul {
+			list-style-type:none;
+			margin: 0;
+			padding: 0;
+			li{
+				margin: 0;
+				padding: 0;
+				display: inline-block;
+				a{
+					display:block;
+					height: 7px;
+					width: 7px;
+					background-color: $fontcolor;
+					border: solid 1px $fontcolor;
+					outline:none;
+					@media only screen and (max-width: 900px) { 
+						height: 15px;
+						width: 15px;
+					}
+				}
+				&.ui-tabs-active {
+					a{
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+	#next {
+		right: -25px;
+		top: 25%;
 		margin-top: 78.5px;
 		-moz-transform: rotate(180deg);
 		-webkit-transform: rotate(180deg);
@@ -174,9 +214,9 @@ section.portfolio{
 		-ms-transform: rotate(180deg);
 		transform: rotate(180deg);
 	}
-	#prev{
-		left: 0px;
-		top: 50%;
+	#prev {
+		left: -25px;
+		top: 25%;
 		margin-top: 78.5px;
 	}
 	#next, #prev{
@@ -191,19 +231,16 @@ section.portfolio{
 			opacity: 0.6;
 		}
 	}
-	.left, .right{
+	.portfolio-sidebar, .portfolio-image{
 		background-color: rgba(255, 255,255, 0.3);
-		height: 90%;
+		padding-top: 3%;
+		padding-bottom: 3%;
 	}
-	.left{
-		margin-left: 4.5454%;
-		margin-right: 4.5454%;
-		width: 22.7273%;
-		float:left;
-		padding-left: 4.5454%;
-		padding-right: 4.5454%;
+	.portfolio-sidebar{
+		padding-left: 3%;
+		padding-right: 3%;
+
 		header{
-			margin-top: 25%;
 			p.kategooria{
 				font-size: 18pt;
 				font-weight: 400;
@@ -221,19 +258,25 @@ section.portfolio{
 			border-bottom: 1px solid rgba(70,69,71, 0.6);;
 			padding-bottom: 5%;
 			margin-bottom: 5%;
-
 		}//header
 		p.desc{
 			line-height: 1.5;
 		}
 
 	}
-	.right{
-		margin-right: 4.5454%;
-		float:left;
-		width: 54.5454%;
+	.portfolio-image{
+		text-align: center;
 		background-position: center center;
 		background-repeat: no-repeat;
+		img {
+			width: 100%;
+			height: auto;
+			@media only screen and (min-width: 500px) { 
+				height: 500px;
+				width: auto;
+			}
+		}
+
 	}
 
 }
